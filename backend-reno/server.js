@@ -10,13 +10,15 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-app.use(cors({
-  origin: [
-    "https://assignment-reno-platfoorms-11mg-h410aozom.vercel.app",
-    "http://localhost:3000"
-  ],
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: [
+      "https://assignment-reno-platfoorms-11mg-eoI89k6uv.vercel.app",
+      "http://localhost:3000"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
