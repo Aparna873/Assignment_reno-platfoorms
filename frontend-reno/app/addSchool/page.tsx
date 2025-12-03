@@ -13,7 +13,7 @@ interface SchoolFormValues {
   image?: FileList
 }
 
-export default function AddSchool() {
+export default function AddSchoolPage() {
   const {
     register,
     handleSubmit,
